@@ -1,0 +1,47 @@
+// Place all the styles related to the furniture controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.item-container {
+margin: 15px;
+margin-left: 25px;
+width: 300px;
+height: 100%;
+
+}
+
+.main { padding:30px;
+background:#34495e;
+h1 a {color:white;
+text-decoration:none;
+}
+
+h1 a:hover{
+
+  color:#e67e22;
+}
+}
+
+
+
+.text {padding-left: 650px;
+  padding-top:150px;
+   margin: 5px;}
+.blue-checkout-more { margin-left: 650px;}
+
+.jumbotron {
+margin-bottom: 0px;
+    height: 350px;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background: transparent;
+}
+ .bg {
+  background: url('img/outdoor-furniture.jpg');
+  background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding:50px;
+    opacity: 0.8;
+}
+footer  {float:bottom;}

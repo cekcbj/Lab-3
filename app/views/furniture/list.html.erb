@@ -1,0 +1,16 @@
+
+  <% @furniture.each_slice(3) do |furniture| %>
+            <div class="row">
+  <% furniture.each do |item| %>
+  <div class="col-xs-4 col-sm-4 col-md-4">
+    <div class ="item-container">
+    <%= image_tag(item.img_name, class: 'list_image img-responsive  ', size: '260x320') %>
+    <i><%= number_to_currency(item.price)%></i>
+    <p><%=item.item%></p>
+    <i class = "btn btn-default pull-right"><%= link_to "More info", "/furniture/#{item.id}"%></i>
+</div>
+</div>
+  <%end %>
+</div>
+<%end%>
+</div>
