@@ -15,16 +15,7 @@ class FurnitureController < ApplicationController
     furniture_item.pid = row.to_h["pid"]
     furniture_item.item  = row.to_h["item"]
     furniture_item.description  = row.to_h["description"]
-     if row.to_h["condition"] == "good"
-    furniture_item.price =  row.to_h["price"].to_i* 0.9
-    furniture_item.clearance = true
-    elsif row.to_h["condition"]== "average"
-    furniture_item.price = row.to_h["price"].to_i * 0.8
-    furniture_item.clearance = true
-    else
-      furniture_item.price= row.to_h["price"]
-      furniture_item.clearance = false
-    end
+    furniture_item.price = row.to_h["price"]
     furniture_item.condition = row.to_h["condition"]
     furniture_item.dimension_w = row.to_h["dimension_w"]
     furniture_item.dimension_l = row.to_h["dimension_l"]

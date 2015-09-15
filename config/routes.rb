@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'furniture#homepage'
 
-   get 'furniture/list'
+   get  'list' => 'furniture#list'
 
   get 'furniture/:id' => 'furniture#detail'
 
